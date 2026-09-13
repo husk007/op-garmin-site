@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Polityka prywatności / Privacy Policy — Kod Paczki</title>
+  <style>
+    :root { color-scheme:light dark; --bg:#f7fafb; --panel:#fff; --ink:#102631; --muted:#526b77; --accent:#007f6d; --line:#d9e3e7; }
+    @media (prefers-color-scheme:dark) { :root { --bg:#071d2a; --panel:#0d2b3b; --ink:#f6fbff; --muted:#a9c2ce; --accent:#1cd6b0; --line:#ffffff1f; } }
+    * { box-sizing:border-box; }
+    body { margin:0; font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; color:var(--ink); background:var(--bg); }
+    main { width:min(820px,calc(100% - 36px)); margin:0 auto; padding:48px 0 80px; }
+    article { padding:clamp(24px,5vw,54px); border:1px solid var(--line); border-radius:24px; background:var(--panel); }
+    h1 { margin-top:0; font-size:clamp(32px,6vw,52px); line-height:1.08; letter-spacing:-.035em; }
+    h2 { margin-top:36px; font-size:23px; line-height:1.25; }
+    .meta,.summary { color:var(--muted); }
+    a { color:var(--accent); }
+    hr { margin:64px 0; border:0; border-top:1px solid var(--line); }
+    code { padding:.12em .35em; border-radius:.35em; background:color-mix(in srgb,var(--muted) 14%,transparent); }
+  </style>
+</head>
+<body>
+<main>
+<article>
+  <section lang="pl">
+    <h1>Polityka prywatności aplikacji Kod Paczki</h1>
+    <p class="meta"><strong>Data wejścia w życie:</strong> 13 września 2026 r.<br><strong>Kontakt:</strong> <a href="mailto:erwin.slabuszewski@gmail.com">erwin.slabuszewski@gmail.com</a></p>
+    <p>Niniejsza polityka dotyczy aplikacji Connect IQ <strong>Kod Paczki</strong> oraz jej aplikacji towarzyszącej na Androida (łącznie „Aplikacja”).</p>
+
+    <h2>Najważniejsze informacje</h2>
+    <ul class="summary">
+      <li>Aplikacja nie wymaga konta i nie korzysta z serwera prowadzonego przez twórcę.</li>
+      <li>Nie zawiera reklam ani narzędzi analitycznych.</li>
+      <li>Treść powiadomień i — po osobnej zgodzie użytkownika — wybranych SMS-ów jest analizowana lokalnie na telefonie.</li>
+      <li>Pełna treść wiadomości nie jest zapisywana. Lokalnie zapisywany jest rozpoznany kod odbioru, jego etykieta/źródło i czas oraz techniczne identyfikatory przetworzonych SMS-ów potrzebne do uniknięcia ponownego importu.</li>
+      <li>Wybrany kod, jego etykieta i wygenerowana macierz QR są przekazywane na sparowany zegarek przez Garmin Connect i Connect IQ Mobile SDK.</li>
+    </ul>
+
+    <h2>Jakie dane są przetwarzane</h2>
+    <h3>Powiadomienia Androida</h3>
+    <p>Po dobrowolnym włączeniu dostępu do powiadomień Aplikacja lokalnie sprawdza tekst nowych powiadomień, aby rozpoznać obsługiwane wiadomości o przesyłkach i kody odbioru. Powiadomienia, które nie pasują do reguł rozpoznawania, są pomijane. Pełny tekst powiadomienia nie jest zapisywany ani wysyłany do twórcy.</p>
+
+    <h3>SMS-y</h3>
+    <p>Opcjonalna funkcja importu wymaga uprawnienia Android <code>READ_SMS</code>. Zapytanie Aplikacji do skrzynki odbiorczej jest ograniczone do nadawcy <code>ORLENPACZKA</code> lub <code>Allegro</code> oraz wiadomości z ostatnich 14 dni.</p>
+    <p>Aplikacja nie ma uprawnienia do wysyłania SMS-ów i nie używa uprawnienia <code>RECEIVE_SMS</code>. Z pasującej wiadomości zapisuje tylko rozpoznany kod, etykietę źródła i czas. Techniczne identyfikatory wiadomości z bieżącego 14-dniowego okresu są przechowywane lokalnie, aby nie importować tych samych SMS-ów ponownie. Treść SMS-a nie jest zachowywana.</p>
+
+    <h3>Dane wpisane ręcznie</h3>
+    <p>Użytkownik może ręcznie wpisać lub wkleić kod i jego etykietę. Dane te są przechowywane wyłącznie lokalnie, tak jak kody rozpoznane automatycznie.</p>
+
+    <h3>Dane na zegarku</h3>
+    <p>Zegarek przechowuje ostatnio przesłany kod, etykietę i dane potrzebne do wyświetlenia kodu QR. Pozwala to pokazać kod bez dostępu do Internetu.</p>
+
+    <h2>Cel przetwarzania</h2>
+    <p>Dane są używane wyłącznie do rozpoznania, zapisania i wyświetlenia użytkownikowi jego kodu odbioru oraz do przesłania wybranego kodu na jego sparowany zegarek. Przetwarzanie odbywa się na żądanie użytkownika i w zakresie funkcji oraz opcjonalnych uprawnień, które sam włączył.</p>
+
+    <h2>Gdzie trafiają dane</h2>
+    <p>Aplikacja nie przesyła kodów ani treści wiadomości na serwer twórcy. Przekazanie kodu z telefonu na zegarek odbywa się za pośrednictwem Garmin Connect i oficjalnego Connect IQ Mobile SDK. Działanie aplikacji Garmin Connect podlega zasadom prywatności Garmin.</p>
+    <p>Twórca nie sprzedaje danych, nie udostępnia ich reklamodawcom i nie profiluje użytkowników.</p>
+
+    <h2>Czas przechowywania i usuwanie</h2>
+    <ul>
+      <li>Kody na telefonie pozostają do chwili usunięcia ich przez użytkownika, wyczyszczenia danych Aplikacji albo jej odinstalowania.</li>
+      <li>Identyfikatory przetworzonych SMS-ów są ograniczane do bieżącego 14-dniowego okna importu.</li>
+      <li>Na zegarku ostatni kod pozostaje do zastąpienia kolejnym kodem lub usunięcia Aplikacji z zegarka.</li>
+      <li>Wiadomość wysłana dobrowolnie na adres wsparcia może być przechowywana tak długo, jak jest to potrzebne do obsługi zgłoszenia.</li>
+    </ul>
+
+    <h2>Uprawnienia i kontrola użytkownika</h2>
+    <p>Dostęp do powiadomień oraz <code>READ_SMS</code> są opcjonalne i można je w każdej chwili wyłączyć w ustawieniach Androida. Bez nich nadal można dodać kod ręcznie. Kody zapisane na telefonie można usuwać pojedynczo w Aplikacji.</p>
+
+    <h2>Bezpieczeństwo</h2>
+    <p>Kod odbioru może umożliwiać odebranie przesyłki. Użytkownik powinien chronić telefon i zegarek blokadą ekranu oraz usuwać nieaktualne kody. Żadna metoda przechowywania nie gwarantuje całkowitego bezpieczeństwa, jednak Aplikacja ogranicza dane do niezbędnego minimum i nie tworzy własnej kopii w chmurze.</p>
+
+    <h2>Dzieci</h2>
+    <p>Aplikacja nie jest kierowana do dzieci i twórca nie zbiera świadomie danych dzieci.</p>
+
+    <h2>Zmiany polityki</h2>
+    <p>Ta polityka może zostać zaktualizowana, jeśli zmieni się sposób działania Aplikacji. Nowa wersja otrzyma zaktualizowaną datę wejścia w życie.</p>
+
+    <h2>Kontakt</h2>
+    <p>Pytania dotyczące prywatności można wysłać na: <strong><a href="mailto:erwin.slabuszewski@gmail.com">erwin.slabuszewski@gmail.com</a></strong>.</p>
+
+    <h2>Znaki towarowe</h2>
+    <p>Kod Paczki jest niezależnym projektem. Nie jest oficjalną aplikacją ani produktem ORLEN S.A., Allegro sp. z o.o. ani Garmin Ltd. Nazwy i znaki towarowe należą do ich właścicieli.</p>
+  </section>
+
+  <hr>
+
+  <section lang="en">
+    <h1>Parcel Code Privacy Policy</h1>
+    <p class="meta"><strong>Effective date:</strong> September 13, 2026<br><strong>Contact:</strong> <a href="mailto:erwin.slabuszewski@gmail.com">erwin.slabuszewski@gmail.com</a></p>
+    <p>This policy applies to the <strong>Parcel Code / Kod Paczki</strong> Connect IQ app and its Android companion app (together, the “App”).</p>
+
+    <h2>Summary</h2>
+    <ul class="summary">
+      <li>The App requires no account and uses no developer-operated server.</li>
+      <li>It contains no advertising or analytics.</li>
+      <li>Notification content and, with separate user permission, selected SMS messages are analyzed locally on the phone.</li>
+      <li>Full message content is not stored. The App stores the recognized pickup code, its source label and time, plus technical identifiers of processed SMS messages needed to prevent repeated imports.</li>
+      <li>The selected code, label, and generated QR matrix are transferred to the paired watch through Garmin Connect and the Connect IQ Mobile SDK.</li>
+    </ul>
+
+    <h2>Data processed</h2>
+    <h3>Android notifications</h3>
+    <p>After the user voluntarily enables notification access, the App locally examines the text of new notifications to identify supported parcel messages and pickup codes. Notifications that do not match the recognition rules are ignored. Full notification text is neither retained nor sent to the developer.</p>
+
+    <h3>SMS messages</h3>
+    <p>The optional import feature requires the Android <code>READ_SMS</code> permission. The App's inbox query is restricted to the sender <code>ORLENPACZKA</code> or <code>Allegro</code> and messages from the last 14 days.</p>
+    <p>The App cannot send SMS messages and does not use the <code>RECEIVE_SMS</code> permission. For a matching message, it stores only the recognized code, source label, and time. Technical message identifiers from the current 14-day window are stored locally to prevent repeat imports. SMS bodies are not retained.</p>
+
+    <h3>Manually entered data</h3>
+    <p>The user may manually enter or paste a code and label. This data is stored only on the device, in the same way as automatically recognized codes.</p>
+
+    <h3>Data on the watch</h3>
+    <p>The watch stores the most recently transferred code, label, and data required to render its QR code. This allows the code to be displayed without Internet access.</p>
+
+    <h2>Purpose</h2>
+    <p>Data is used only to recognize, save, and display the user's pickup code and to transfer a selected code to the user's paired watch. Processing takes place at the user's request and within the features and optional permissions that the user enables.</p>
+
+    <h2>Data transfers</h2>
+    <p>The App does not send codes or message content to a server operated by the developer. Transfer from the phone to the watch is handled through Garmin Connect and the official Connect IQ Mobile SDK. Garmin Connect is governed by Garmin's own privacy terms.</p>
+    <p>The developer does not sell data, share it with advertisers, or profile users.</p>
+
+    <h2>Retention and deletion</h2>
+    <ul>
+      <li>Codes on the phone remain until the user deletes them, clears the App's data, or uninstalls the App.</li>
+      <li>Processed SMS identifiers are limited to the current 14-day import window.</li>
+      <li>The latest code remains on the watch until another code replaces it or the App is removed from the watch.</li>
+      <li>A message voluntarily sent to the support address may be retained for as long as needed to handle the request.</li>
+    </ul>
+
+    <h2>Permissions and user control</h2>
+    <p>Notification access and <code>READ_SMS</code> are optional and may be disabled at any time in Android settings. Codes can still be entered manually. Codes stored on the phone can be deleted individually in the App.</p>
+
+    <h2>Security</h2>
+    <p>A pickup code may allow someone to collect a parcel. Users should protect their phone and watch with a screen lock and remove expired codes. No storage method can guarantee complete security, but the App minimizes retained data and creates no developer-operated cloud copy.</p>
+
+    <h2>Children</h2>
+    <p>The App is not directed to children, and the developer does not knowingly collect children's data.</p>
+
+    <h2>Changes</h2>
+    <p>This policy may be updated if the App's behavior changes. An updated policy will include a revised effective date.</p>
+
+    <h2>Contact</h2>
+    <p>Privacy questions may be sent to: <strong><a href="mailto:erwin.slabuszewski@gmail.com">erwin.slabuszewski@gmail.com</a></strong>.</p>
+
+    <h2>Trademarks</h2>
+    <p>Parcel Code / Kod Paczki is an independent project. It is not an official app or product of ORLEN S.A., Allegro sp. z o.o., or Garmin Ltd. Names and trademarks belong to their respective owners.</p>
+  </section>
+</article>
+</main>
+</body>
+</html>

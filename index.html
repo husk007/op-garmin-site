@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Kod Paczki</title>
+  <style>
+    :root { color-scheme: dark; --bg:#071d2a; --panel:#0d2b3b; --ink:#f6fbff; --muted:#a9c2ce; --accent:#1cd6b0; }
+    * { box-sizing: border-box; }
+    body { margin:0; min-height:100vh; font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; color:var(--ink); background:radial-gradient(circle at 80% 10%,#154158 0,transparent 32rem),var(--bg); }
+    main { width:min(760px,calc(100% - 40px)); margin:0 auto; padding:72px 0; }
+    .mark { width:88px; height:88px; border-radius:24px; display:grid; place-items:center; background:var(--panel); box-shadow:0 16px 50px #0006; }
+    h1 { margin:28px 0 8px; font-size:clamp(42px,8vw,72px); line-height:1.05; letter-spacing:-.04em; }
+    .lead { max-width:620px; color:var(--muted); font-size:clamp(19px,3vw,24px); }
+    .card { margin-top:42px; padding:26px 28px; border:1px solid #ffffff18; border-radius:22px; background:#0d2b3bcc; }
+    a { color:var(--accent); }
+    footer { margin-top:42px; color:var(--muted); font-size:14px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark" aria-hidden="true">
+      <svg width="64" height="64" viewBox="0 0 108 108">
+        <path d="M54 18 84 33v41L54 90 24 74V33z" fill="#f6fbff"/>
+        <path d="m29 34 25-12 25 12-25 13z" fill="#1cd6b0"/>
+        <path d="M52 25h4v19h-4zM35 50h11v11H35zm3 3v5h5v-5zm24-3h11v11H62zm3 3v5h5v-5zM35 65h11v11H35zm3 3v5h5v-5zm16-17h6v6h-6zm-3 11h6v6h-6zm9-3h6v11h-6zm-10 13h7v6h-7zm11 1h7v6h-7zm8-9h6v6h-6z" fill="#071d2a"/>
+      </svg>
+    </div>
+    <h1>Kod Paczki</h1>
+    <p class="lead">Kod odbioru jako duży numer lub QR na zegarku. Dane są rozpoznawane na telefonie i pozostają lokalnie na urządzeniach.</p>
+    <section class="card">
+      <h2>Informacje</h2>
+      <p>Aplikacja Connect IQ współpracuje z aplikacją towarzyszącą na Androida. Obecna wersja beta jest przeznaczona dla fēnix 7 Pro i fēnix 7 Pro Solar.</p>
+      <p><a href="privacy-policy.html">Polityka prywatności / Privacy Policy</a></p>
+      <p>Kontakt: <strong><a href="mailto:erwin.slabuszewski@gmail.com">erwin.slabuszewski@gmail.com</a></strong></p>
+    </section>
+    <footer>Kod Paczki jest niezależnym projektem i nie jest oficjalnym produktem ORLEN, Allegro ani Garmin.</footer>
+  </main>
+</body>
+</html>
