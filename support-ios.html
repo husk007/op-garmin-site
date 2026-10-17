@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><meta name="robots" content="index,follow">
+<title>Wsparcie iOS / Support — Kod Paczki / Parcel Code</title>
+<style>
+:root{--red:#D81E04;--ink:#2C2E2F;--muted:#676D6F;--line:#E4E4E1;--bg:#F2F2F1;--white:#FFFFFF}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:var(--red);color:white;padding:24px max(24px,calc((100vw - 880px)/2));display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+header strong{font-size:22px;letter-spacing:-.04em}header a{color:white;text-decoration:none}nav{display:flex;gap:18px}
+main{width:min(880px,calc(100% - 32px));margin:36px auto 80px;background:white;border-radius:24px;border:1px solid var(--line);padding:clamp(24px,5vw,62px)}
+h1{font-size:clamp(30px,5vw,44px);letter-spacing:-.045em;line-height:1.15}h2{margin-top:36px;font-size:23px;line-height:1.35}
+a{color:var(--red)}.sub{color:var(--muted)}hr{border:0;border-top:1px solid var(--line);margin:48px 0}ul{padding-left:24px}li{margin:8px 0}
+.notice{border-left:5px solid var(--red);background:#FAF1EF;padding:16px 20px;border-radius:6px}
+footer{font-size:13px;color:var(--muted);width:min(880px,calc(100% - 32px));margin:-52px auto 80px}
+@media(prefers-reduced-motion:no-preference){a{transition:opacity .15s}a:hover{opacity:.72}}
+</style></head><body><header><strong>Kod Paczki · iOS</strong><nav><a href="./">Start</a><a href="#en">English</a><a href="support-ios.html">Pomoc / Help</a></nav></header><main>
+<section lang="pl" id="pl"><h1>Pomoc — Kod Paczki na iPhone</h1>
+<p class="sub">Wersja przygotowywana do TestFlight · 17 października 2026 · <a href="#en">English</a></p>
+<p><strong>Kod Paczki</strong> pozwala zapisywać kody odbioru oraz numery nadania lokalnie na iPhonie. Aplikacja nie wymaga konta ani logowania.</p>
+<h2>Jak używać</h2>
+<ol><li>Dodaj ręcznie kod odbioru (5–6 cyfr) lub nadania (10 lub 13 cyfr).</li><li>Alternatywnie wybierz „Udostępnij” przy tekście zawierającym kod, wybierz Kod Paczki i zatwierdź.</li><li>Na liście dotknij przesyłki. Dla kodu odbioru zobaczysz numer i QR; dla nadania sam numer.</li><li>Przesuń wiersz w lewo, aby go edytować lub usunąć.</li></ol>
+<h2>Typowe pytania</h2>
+<p><strong>Czy mogę zeskanować kod aparatem?</strong> Nie, import z aparatu/OCR nie należy do obecnej wersji. Kod możesz dodać ręcznie albo przez udostępnienie tekstu.</p>
+<p><strong>Czy iPhone automatycznie czyta SMS-y?</strong> Nie. iOS nie udostępnia takiego ogólnego mechanizmu aplikacjom tego typu.</p>
+<p><strong>Czy zsynchronizuje się z Garminem?</strong> Nie w pierwszej wersji Beta 1. Integracja jest planowana i wymaga osobnego testu.</p>
+<p><strong>Czy aplikacja działa offline?</strong> Tak, wyświetlanie już zapisanych numerów/QR nie wymaga dostępu do Internetu.</p>
+<p><strong>Dlaczego nie widzę importu z Udostępnij?</strong> Sprawdź, czy udostępniany element zawiera tekst i czy rozszerzenie zostało poprawnie zainstalowane. Nie każda aplikacja udostępnia tekst w tym samym formacie.</p>
+<p><strong>Co jeśli dane nie mogą zostać otwarte?</strong> Nie kasuj aplikacji ani danych w celu diagnostyki; zapisz wersję iOS, numer aplikacji i skontaktuj się z pomocą.</p>
+<h2>Kontakt i zgłaszanie błędów</h2>
+<p>E-mail: <a href="mailto:erwin.slabuszewski@gmail.com?subject=Kod%20Paczki%20iOS%20-%20wsparcie">erwin.slabuszewski@gmail.com</a></p>
+<p>Podaj model iPhone’a, wersję iOS, krok, na którym występuje problem, oraz numer wersji aplikacji. <strong>Nie przesyłaj aktywnych kodów odbioru, skrytek, danych adresowych ani pełnych wiadomości.</strong></p>
+<p><a href="privacy-ios.html">Polityka prywatności na iOS</a></p>
+</section><hr>
+<section lang="en" id="en"><h1>Support — Parcel Code for iPhone</h1>
+<p class="sub">Preparing for TestFlight · October 17, 2026 · <a href="#pl">Po polsku</a></p>
+<p>Parcel Code stores pickup codes and numeric posting codes locally on your iPhone. No account is needed.</p>
+<h2>Getting started</h2>
+<ol><li>Add a five/six-digit pickup code or 10/13-digit posting code manually.</li><li>Alternatively, use system Share from an app containing supported text and confirm import in Parcel Code.</li><li>Tap a parcel row to see its number and (for pickup only) a QR code.</li><li>Swipe the row to edit or delete it.</li></ol>
+<h2>FAQ</h2>
+<p><strong>Camera scanning or OCR?</strong> Not included in the current beta; use manual entry or Share.</p>
+<p><strong>Automatic iPhone SMS inbox reading?</strong> No.</p>
+<p><strong>Garmin watch synchronization?</strong> Planned for a later beta; not in Beta 1.</p>
+<p><strong>Offline mode?</strong> Previously stored numeric/pickup QR codes are available offline.</p>
+<p><strong>Share target missing?</strong> Verify that a text item was shared and that the extension is installed. Not all third-party apps expose the same share payload.</p>
+<p><strong>Storage errors?</strong> Do not uninstall to troubleshoot; contact support with iOS and app version details.</p>
+<h2>Contact</h2>
+<p><a href="mailto:erwin.slabuszewski@gmail.com?subject=Parcel%20Code%20iOS%20Support">erwin.slabuszewski@gmail.com</a></p>
+<p>Include iPhone model, iOS version, app version and steps to reproduce. <strong>Never send active pickup codes, addresses, parcel identifiers or full messages.</strong></p>
+<p><a href="privacy-ios.html">iOS privacy policy</a></p></section></main><footer>© 2026 Kod Paczki — niezależny projekt. Nazwy i logotypy operatorów należą do ich właścicieli.</footer></body></html>
