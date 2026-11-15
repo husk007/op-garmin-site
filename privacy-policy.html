@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <title>Polityka prywatności / Privacy Policy — Kod Paczki</title>
-  <meta name="description" content="Polityka prywatności aplikacji Kod Paczki (Garmin Connect IQ i aplikacja towarzysząca na Androida) / Privacy policy of the Parcel Code app.">
+  <meta name="description" content="Polityka prywatności aplikacji Kod Paczki (Android, Garmin Connect IQ i Wear OS) / Privacy policy of the Parcel Code app (Android, Garmin Connect IQ and Wear OS).">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 108 108'%3E%3Crect width='108' height='108' rx='24' fill='%230d2b3b'/%3E%3Cpath d='M54 18 84 33v41L54 90 24 74V33z' fill='none' stroke='%23f6fbff' stroke-width='6'/%3E%3Cpath d='m29 34 25-12 25 12-25 13z' fill='%231cd6b0'/%3E%3C/svg%3E">
   <style>
     :root { color-scheme:light dark; --bg:#f7fafb; --panel:#fff; --ink:#102631; --muted:#526b77; --accent:#007f6d; --line:#d9e3e7; }
@@ -27,128 +27,144 @@
 <article>
   <section lang="pl">
     <h1>Polityka prywatności aplikacji Kod Paczki</h1>
-    <p class="meta"><strong>Data wejścia w życie:</strong> 13 września 2026 r.<br><strong>Kontakt:</strong> <a href="mailto:erwin.slabuszewski@gmail.com">erwin.slabuszewski@gmail.com</a></p>
-    <p>Niniejsza polityka dotyczy aplikacji Connect IQ <strong>Kod Paczki</strong> oraz jej aplikacji towarzyszącej na Androida (łącznie „Aplikacja”).</p>
-
+    <p><strong>Data wejścia w życie: 11 listopada 2026 r.</strong><br><strong>Kontakt: <a href="mailto:erwin.slabuszewski@gmail.com">erwin.slabuszewski@gmail.com</a></strong></p>
+    <p>Niniejsza polityka dotyczy aplikacji towarzyszącej <strong>Kod Paczki</strong> na Androida oraz zgodnych klientów zegarkowych Garmin Connect IQ i Wear OS (łącznie „Aplikacja”).</p>
     <h2>Najważniejsze informacje</h2>
-    <ul class="summary">
+    <ul>
       <li>Aplikacja nie wymaga konta i nie korzysta z serwera prowadzonego przez twórcę.</li>
       <li>Nie zawiera reklam ani narzędzi analitycznych.</li>
       <li>Treść powiadomień i — po osobnej zgodzie użytkownika — wybranych SMS-ów jest analizowana lokalnie na telefonie.</li>
-      <li>Pełna treść wiadomości nie jest zapisywana. Lokalnie zapisywany jest rozpoznany kod odbioru, jego etykieta/źródło i czas oraz techniczne identyfikatory przetworzonych SMS-ów potrzebne do uniknięcia ponownego importu.</li>
-      <li>Wybrany kod, jego etykieta i wygenerowana macierz QR są przekazywane na sparowany zegarek przez Garmin Connect i Connect IQ Mobile SDK.</li>
+      <li>Pełna treść wiadomości nie jest zapisywana. Lokalnie zapisywany jest rozpoznany kod odbioru lub nadania, jego etykieta/źródło i czas oraz techniczne identyfikatory przetworzonych SMS-ów potrzebne do uniknięcia ponownego importu.</li>
+      <li>Dane potrzebne do pokazania kodu na zegarku mogą być przekazywane do sparowanego urządzenia Garmin przez Garmin Connect / Connect IQ Mobile SDK albo do Wear OS przez Google Play services Data Layer.</li>
+      <li>Kopia zapasowa danych aplikacji jest wyłączona w manifestach aplikacji Android i Wear OS, aby kody nie były celowo włączane do systemowej kopii zapasowej aplikacji.</li>
+      <li>Aplikacja nie kopiuje kodów automatycznie do schowka. Zrzuty ekranu, nagrywanie ekranu i podgląd w ostatnich aplikacjach nie są domyślnie blokowane; użytkownik powinien traktować takie materiały jak wrażliwe.</li>
+      <li>Na ekranie „Stan synchronizacji i naprawa” można samodzielnie kliknąć „Kopiuj zanonimizowaną diagnostykę”. Do schowka Androida trafia wyłącznie raport ze zdefiniowanych pól technicznych (wersja, połączenie, protokół, rewizje, czas i kody błędów). Raport nie zawiera kodów przesyłek, QR, treści SMS/powiadomień, surowych identyfikatorów zegarka lub danych logowania. Schowkiem zarządza system Android i jego zawartość może być dostępna dla innych aplikacji zgodnie z zasadami systemu.</li>
     </ul>
-
     <h2>Jakie dane są przetwarzane</h2>
     <h3>Powiadomienia Androida</h3>
     <p>Po dobrowolnym włączeniu dostępu do powiadomień Aplikacja lokalnie sprawdza tekst nowych powiadomień, aby rozpoznać obsługiwane wiadomości o przesyłkach i kody odbioru. Powiadomienia, które nie pasują do reguł rozpoznawania, są pomijane. Pełny tekst powiadomienia nie jest zapisywany ani wysyłany do twórcy.</p>
-
     <h3>SMS-y</h3>
-    <p>Opcjonalna funkcja importu wymaga uprawnienia Android <code>READ_SMS</code>. Zapytanie Aplikacji do skrzynki odbiorczej jest ograniczone do nadawcy <code>ORLENPACZKA</code> lub <code>Allegro</code> oraz wiadomości z ostatnich 14 dni.</p>
+    <p>Opcjonalna funkcja importu wymaga uprawnienia Android <code>READ_SMS</code>. Zapytanie Aplikacji do skrzynki odbiorczej jest ograniczone do:</p>
+    <ul>
+      <li>nadawcy <code>ORLENPACZKA</code> lub <code>Allegro</code>,</li>
+      <li>wiadomości z ostatnich 14 dni.</li>
+    </ul>
     <p>Aplikacja nie ma uprawnienia do wysyłania SMS-ów i nie używa uprawnienia <code>RECEIVE_SMS</code>. Z pasującej wiadomości zapisuje tylko rozpoznany kod, etykietę źródła i czas. Techniczne identyfikatory wiadomości z bieżącego 14-dniowego okresu są przechowywane lokalnie, aby nie importować tych samych SMS-ów ponownie. Treść SMS-a nie jest zachowywana.</p>
-
-    <h3>Dane wpisane ręcznie</h3>
-    <p>Użytkownik może ręcznie wpisać lub wkleić kod i jego etykietę. Dane te są przechowywane wyłącznie lokalnie, tak jak kody rozpoznane automatycznie.</p>
-
+    <h3>Dane wpisane lub udostępnione przez użytkownika</h3>
+    <p>Użytkownik może ręcznie wpisać lub wkleić kod i jego etykietę albo udostępnić tekst do Aplikacji przez systemowy arkusz udostępniania Androida. Przed zapisem udostępnionego kodu Aplikacja prosi o potwierdzenie. Dane te są przetwarzane lokalnie i zapisywane tak jak kody rozpoznane automatycznie.</p>
+    <p>Użytkownik może też wybrać obraz z kodem QR odbioru przez systemowy selektor plików. Obraz jest dekodowany lokalnie w pamięci; Aplikacja nie zapisuje go, nie kopiuje i nie wysyła — zachowuje tylko rozpoznany kod.</p>
+    <h3>Zrzuty ekranu, nagrywanie i schowek</h3>
+    <p>Bieżąca wersja nie używa <code>FLAG_SECURE</code> ani odpowiednika. Użytkownik może świadomie wykonać zrzut ekranu lub nagranie ekranu, a systemowy podgląd ostatnich aplikacji może pokazać ostatni ekran. Takie obrazy mogą zawierać aktywny kod i powinny być chronione przez użytkownika. Materiały testowe, sklepowe i wsparcia muszą używać kodów syntetycznych.</p>
+    <p>Aplikacja nie kopiuje kodów automatycznie do schowka. Każda przyszła funkcja Copy/Share wychodząca z aplikacji musi być jawna i uruchamiana przez użytkownika.</p>
     <h3>Dane na zegarku</h3>
-    <p>Zegarek przechowuje ostatnio przesłany kod, etykietę i dane potrzebne do wyświetlenia kodu QR. Pozwala to pokazać kod bez dostępu do Internetu.</p>
-
+    <p>Klient zegarkowy przechowuje ostatni poprawnie zsynchronizowany snapshot kodów oraz dane potrzebne do wyświetlenia numeru/QR. Pozwala to pokazać kody offline. Kod odbioru jest przekazywany z numerem i macierzą QR; 10-cyfrowy kod nadania wyłącznie jako numer (bez QR), a 13-cyfrowy kod nadania pozostaje tylko na telefonie. Garmin używa uprawnienia Connect IQ <code>Communications</code> do komunikacji z aplikacją towarzyszącą. Klient Wear OS nie deklaruje własnego uprawnienia runtime do odczytu wiadomości, kontaktów, lokalizacji ani sensorów; odbiera dane przez Google Play services Data Layer.</p>
     <h2>Cel przetwarzania</h2>
-    <p>Dane są używane wyłącznie do rozpoznania, zapisania i wyświetlenia użytkownikowi jego kodu odbioru oraz do przesłania wybranego kodu na jego sparowany zegarek. Przetwarzanie odbywa się na żądanie użytkownika i w zakresie funkcji oraz opcjonalnych uprawnień, które sam włączył.</p>
-
+    <p>Dane są używane wyłącznie do rozpoznania, zapisania i wyświetlenia użytkownikowi jego kodu oraz do zsynchronizowania zgodnego snapshotu na jego sparowane urządzenie. Przetwarzanie odbywa się na żądanie użytkownika i w zakresie funkcji oraz opcjonalnych uprawnień, które sam włączył.</p>
     <h2>Gdzie trafiają dane</h2>
-    <p>Aplikacja nie przesyła kodów ani treści wiadomości na serwer twórcy. Przekazanie kodu z telefonu na zegarek odbywa się za pośrednictwem Garmin Connect i oficjalnego Connect IQ Mobile SDK. Działanie aplikacji Garmin Connect podlega zasadom prywatności Garmin.</p>
+    <p>Aplikacja nie przesyła kodów ani treści wiadomości na serwer prowadzony przez twórcę.</p>
+    <ul>
+      <li>Dla Garmin transfer telefonu z zegarkiem odbywa się przez Garmin Connect i oficjalny Connect IQ Mobile SDK; działanie Garmin Connect podlega zasadom prywatności Garmin.</li>
+      <li>Dla Wear OS synchronizacja telefonu z zegarkiem korzysta z Google Play services Data Layer; działanie usług Google Play i sparowanego urządzenia podlega odpowiednim zasadom Google/producenta urządzenia.</li>
+    </ul>
     <p>Twórca nie sprzedaje danych, nie udostępnia ich reklamodawcom i nie profiluje użytkowników.</p>
-
     <h2>Czas przechowywania i usuwanie</h2>
     <ul>
-      <li>Kody na telefonie pozostają do chwili usunięcia ich przez użytkownika, wyczyszczenia danych Aplikacji albo jej odinstalowania.</li>
+      <li>Aktywne kody odbioru na telefonie są automatycznie usuwane po 4 polskich dniach roboczych; użytkownik może usunąć je wcześniej, a wyczyszczenie danych lub odinstalowanie Aplikacji usuwa lokalne dane aplikacji.</li>
+      <li>Kody nadania nie wygasają automatycznie; użytkownik usuwa je ręcznie.</li>
       <li>Identyfikatory przetworzonych SMS-ów są ograniczane do bieżącego 14-dniowego okna importu.</li>
-      <li>Na zegarku ostatni kod pozostaje do zastąpienia kolejnym kodem lub usunięcia Aplikacji z zegarka.</li>
+      <li>Aplikacja zapisuje też lokalny stan techniczny bez kodów przesyłek (np. czy pokazano przewodnik lub potwierdzenie pierwszej synchronizacji, rewizje synchronizacji i dane zgodności sparowanego zegarka); znika on po wyczyszczeniu danych lub odinstalowaniu.</li>
+      <li>Zegarek przechowuje ostatni poprawnie zsynchronizowany snapshot offline. Usunięcie lub wygaśnięcie kodu po stronie telefonu może pozostać chwilowo widoczne na odłączonym zegarku do czasu udanej zgodnej synchronizacji; dane zegarka są też usuwane po usunięciu klienta zegarkowego lub wyczyszczeniu jego danych zgodnie z mechanizmem platformy.</li>
       <li>Wiadomość wysłana dobrowolnie na adres wsparcia może być przechowywana tak długo, jak jest to potrzebne do obsługi zgłoszenia.</li>
     </ul>
-
     <h2>Uprawnienia i kontrola użytkownika</h2>
-    <p>Dostęp do powiadomień oraz <code>READ_SMS</code> są opcjonalne i można je w każdej chwili wyłączyć w ustawieniach Androida. Bez nich nadal można dodać kod ręcznie. Kody zapisane na telefonie można usuwać pojedynczo w Aplikacji.</p>
-
+    <p>Dostęp do powiadomień oraz <code>READ_SMS</code> są opcjonalne i można je w każdej chwili wyłączyć w ustawieniach Androida. Bez <code>READ_SMS</code> nadal działają import z powiadomień, udostępnienie tekstu i ręczne dodawanie kodu. Bez dostępu do powiadomień nadal działają udostępnienie tekstu i ręczne dodawanie kodu, a import SMS może działać po osobnej zgodzie <code>READ_SMS</code>. Kody zapisane na telefonie można usuwać pojedynczo w Aplikacji.</p>
+    <p>Biblioteka Android WorkManager wnosi do scalonego manifestu techniczne uprawnienia potrzebne do planowania i wykonywania prac w tle (<code>WAKE_LOCK</code>, <code>ACCESS_NETWORK_STATE</code>, <code>RECEIVE_BOOT_COMPLETED</code>, <code>FOREGROUND_SERVICE</code>). Nie dają one dostępu do treści wiadomości, kontaktów ani lokalizacji. Zestaw uprawnień finalnego APK jest sprawdzany automatycznie w CI i każda zmiana wymaga jawnego przeglądu.</p>
+    <h2>Logi i diagnostyka</h2>
+    <p>Kod produkcyjny Aplikacji nie zapisuje własnych logów zawierających kody przesyłek, treści wiadomości, identyfikatory przetworzonych wiadomości ani credentials. Repozytorium ma automatyczny guard blokujący jawne wywołania logowania w źródłach produkcyjnych aktywnych platform. Logi systemu operacyjnego, bibliotek platformowych lub narzędzi sklepu pozostają poza bezpośrednią kontrolą Aplikacji.</p>
     <h2>Bezpieczeństwo</h2>
-    <p>Kod odbioru może umożliwiać odebranie przesyłki. Użytkownik powinien chronić telefon i zegarek blokadą ekranu oraz usuwać nieaktualne kody. Żadna metoda przechowywania nie gwarantuje całkowitego bezpieczeństwa, jednak Aplikacja ogranicza dane do niezbędnego minimum i nie tworzy własnej kopii w chmurze.</p>
-
+    <p>Kod odbioru może umożliwiać odebranie przesyłki. Użytkownik powinien chronić telefon i zegarek blokadą ekranu oraz usuwać nieaktualne kody. Żadna metoda przechowywania nie gwarantuje całkowitego bezpieczeństwa, jednak Aplikacja ogranicza dane do niezbędnego minimum, nie tworzy własnej kopii w chmurze i ma wyłączoną systemową kopię zapasową danych aplikacji na Androidzie i Wear OS.</p>
+    <p>Android i Wear OS używają prywatnego storage aplikacji, a Garmin przechowuje zminimalizowany snapshot w <code>Application.Storage</code>. Projekt nie obiecuje dodatkowego szyfrowania chroniącego przed już odblokowanym, rooted/jailbroken lub skompromitowanym urządzeniem ani przed fizycznym obejściem zabezpieczeń platformy.</p>
+    <p>Po reinstalacji lub zmianie telefonu aktywne kody nie są przywracane z chmurowego backupu aplikacji. Nowa instalacja tworzy nowy <code>senderEpoch</code>; kody należy ponownie zaimportować lub dodać ręcznie, a zegarki ponownie zsynchronizować.</p>
+    <p>Usunięcie kodu oznacza usunięcie go z aktywnego storage telefonu i propagację zaktualizowanej listy do osiągalnych zegarków. Odłączony zegarek może przechowywać wcześniejszy snapshot do kolejnej udanej synchronizacji lub wyczyszczenia jego danych. Aplikacja nie obiecuje kryptograficznego wymazania pamięci flash.</p>
     <h2>Dzieci</h2>
     <p>Aplikacja nie jest kierowana do dzieci i twórca nie zbiera świadomie danych dzieci.</p>
-
     <h2>Zmiany polityki</h2>
     <p>Ta polityka może zostać zaktualizowana, jeśli zmieni się sposób działania Aplikacji. Nowa wersja otrzyma zaktualizowaną datę wejścia w życie.</p>
-
     <h2>Kontakt</h2>
     <p>Pytania dotyczące prywatności można wysłać na: <strong><a href="mailto:erwin.slabuszewski@gmail.com">erwin.slabuszewski@gmail.com</a></strong>.</p>
-
     <h2>Znaki towarowe</h2>
-    <p>Kod Paczki jest niezależnym projektem. Nie jest oficjalną aplikacją ani produktem ORLEN S.A., Allegro sp. z o.o. ani Garmin Ltd. Nazwy i znaki towarowe należą do ich właścicieli.</p>
+    <p>Kod Paczki jest niezależnym projektem. Nie jest oficjalną aplikacją ani produktem ORLEN S.A., Allegro sp. z o.o., Garmin Ltd. ani Google LLC. Nazwy i znaki towarowe należą do ich właścicieli.</p>
   </section>
-
   <hr>
-
   <section lang="en">
     <h1>Parcel Code Privacy Policy</h1>
-    <p class="meta"><strong>Effective date:</strong> September 13, 2026<br><strong>Contact:</strong> <a href="mailto:erwin.slabuszewski@gmail.com">erwin.slabuszewski@gmail.com</a></p>
-    <p>This policy applies to the <strong>Parcel Code / Kod Paczki</strong> Connect IQ app and its Android companion app (together, the “App”).</p>
-
+    <p><strong>Effective date: November 11, 2026</strong><br><strong>Contact: <a href="mailto:erwin.slabuszewski@gmail.com">erwin.slabuszewski@gmail.com</a></strong></p>
+    <p>This policy applies to the <strong>Parcel Code / Kod Paczki</strong> Android companion app and compatible Garmin Connect IQ and Wear OS watch clients (together, the “App”).</p>
     <h2>Summary</h2>
-    <ul class="summary">
+    <ul>
       <li>The App requires no account and uses no developer-operated server.</li>
       <li>It contains no advertising or analytics.</li>
       <li>Notification content and, with separate user permission, selected SMS messages are analyzed locally on the phone.</li>
-      <li>Full message content is not stored. The App stores the recognized pickup code, its source label and time, plus technical identifiers of processed SMS messages needed to prevent repeated imports.</li>
-      <li>The selected code, label, and generated QR matrix are transferred to the paired watch through Garmin Connect and the Connect IQ Mobile SDK.</li>
+      <li>Full message content is not stored. The App stores the recognized pickup or sending code, its source label and time, plus technical identifiers of processed SMS messages needed to prevent repeated imports.</li>
+      <li>Data required to display a code on a watch may be transferred to a paired Garmin device through Garmin Connect / Connect IQ Mobile SDK or to Wear OS through the Google Play services Data Layer.</li>
+      <li>App-data backup is disabled in the Android phone and Wear OS manifests so parcel codes are not intentionally included in the operating system's app-backup flow.</li>
+      <li>The App never copies parcel codes to the clipboard automatically. Screenshots, screen recording and recent-app previews are not blocked by default; users should treat such material as sensitive.</li>
+      <li>On the “Sync status and recovery” screen users may explicitly tap “Copy sanitized diagnostics”. The Android clipboard receives only a report of predefined technical fields (app version, connection, protocol, revisions, time and error codes). The report contains no parcel/QR codes, SMS/notification bodies, raw watch IDs or credentials. Android controls the clipboard and its contents may be available to other apps under the platform's rules.</li>
     </ul>
-
     <h2>Data processed</h2>
     <h3>Android notifications</h3>
     <p>After the user voluntarily enables notification access, the App locally examines the text of new notifications to identify supported parcel messages and pickup codes. Notifications that do not match the recognition rules are ignored. Full notification text is neither retained nor sent to the developer.</p>
-
     <h3>SMS messages</h3>
-    <p>The optional import feature requires the Android <code>READ_SMS</code> permission. The App's inbox query is restricted to the sender <code>ORLENPACZKA</code> or <code>Allegro</code> and messages from the last 14 days.</p>
+    <p>The optional import feature requires the Android <code>READ_SMS</code> permission. The App's inbox query is restricted to:</p>
+    <ul>
+      <li>the sender <code>ORLENPACZKA</code> or <code>Allegro</code>, and</li>
+      <li>messages from the last 14 days.</li>
+    </ul>
     <p>The App cannot send SMS messages and does not use the <code>RECEIVE_SMS</code> permission. For a matching message, it stores only the recognized code, source label, and time. Technical message identifiers from the current 14-day window are stored locally to prevent repeat imports. SMS bodies are not retained.</p>
-
-    <h3>Manually entered data</h3>
-    <p>The user may manually enter or paste a code and label. This data is stored only on the device, in the same way as automatically recognized codes.</p>
-
+    <h3>Manually entered or shared data</h3>
+    <p>The user may manually enter or paste a code and label, or share text to the App through Android's system share sheet. The App asks for confirmation before saving a shared code. This data is processed locally and stored in the same way as automatically recognized codes.</p>
+    <p>The user may also pick an image of a pickup QR code through the system file picker. The image is decoded locally in memory; the App does not store, copy or send it — only the recognized code is kept.</p>
+    <h3>Screenshots, screen recording and clipboard</h3>
+    <p>The current version does not use <code>FLAG_SECURE</code> or an equivalent. A user may intentionally take a screenshot or screen recording, and the operating system's recent-app preview may show the last screen. Such images may contain an active code and should be protected by the user. Test, store and support material must use synthetic codes.</p>
+    <p>The App never copies parcel codes to the clipboard automatically. Any future outbound Copy/Share feature must be explicit and user-initiated.</p>
     <h3>Data on the watch</h3>
-    <p>The watch stores the most recently transferred code, label, and data required to render its QR code. This allows the code to be displayed without Internet access.</p>
-
+    <p>A watch client stores the last successfully synchronized code snapshot and data required to show its numeric/QR view. This keeps codes available offline. A pickup code is sent with its number and QR matrix; a 10-digit sending code as a number only (no QR), and a 13-digit sending code stays on the phone. Garmin uses the Connect IQ <code>Communications</code> permission to communicate with the companion app. The Wear OS client declares no app-level runtime permission to read messages, contacts, location, or sensors; it receives synchronized data through the Google Play services Data Layer.</p>
     <h2>Purpose</h2>
-    <p>Data is used only to recognize, save, and display the user's pickup code and to transfer a selected code to the user's paired watch. Processing takes place at the user's request and within the features and optional permissions that the user enables.</p>
-
+    <p>Data is used only to recognize, save, and display the user's code and to synchronize a compatible snapshot to the user's paired device. Processing takes place at the user's request and within the features and optional permissions that the user enables.</p>
     <h2>Data transfers</h2>
-    <p>The App does not send codes or message content to a server operated by the developer. Transfer from the phone to the watch is handled through Garmin Connect and the official Connect IQ Mobile SDK. Garmin Connect is governed by Garmin's own privacy terms.</p>
+    <p>The App does not send codes or message content to a server operated by the developer.</p>
+    <ul>
+      <li>Garmin phone-to-watch transfer is handled through Garmin Connect and the official Connect IQ Mobile SDK; Garmin Connect is governed by Garmin's privacy terms.</li>
+      <li>Wear OS phone-to-watch synchronization uses the Google Play services Data Layer; Google Play services and the paired device are governed by the applicable Google/device-manufacturer terms.</li>
+    </ul>
     <p>The developer does not sell data, share it with advertisers, or profile users.</p>
-
     <h2>Retention and deletion</h2>
     <ul>
-      <li>Codes on the phone remain until the user deletes them, clears the App's data, or uninstalls the App.</li>
+      <li>Active pickup codes on the phone are automatically removed after 4 Polish business days; users may delete them earlier, and clearing app data or uninstalling the App removes its local data.</li>
+      <li>Sending codes do not expire automatically; users delete them manually.</li>
       <li>Processed SMS identifiers are limited to the current 14-day import window.</li>
-      <li>The latest code remains on the watch until another code replaces it or the App is removed from the watch.</li>
+      <li>The App also keeps local technical state without parcel codes (for example whether the guide or the first-sync confirmation was shown, sync revisions and the paired watch's compatibility data); it is removed when app data is cleared or the App is uninstalled.</li>
+      <li>A watch keeps the last successfully synchronized offline snapshot. A code deleted or expired on the phone may remain temporarily visible on a disconnected watch until a successful compatible synchronization; watch data is also removed when the watch client is uninstalled or its data is cleared according to the platform's mechanism.</li>
       <li>A message voluntarily sent to the support address may be retained for as long as needed to handle the request.</li>
     </ul>
-
     <h2>Permissions and user control</h2>
-    <p>Notification access and <code>READ_SMS</code> are optional and may be disabled at any time in Android settings. Codes can still be entered manually. Codes stored on the phone can be deleted individually in the App.</p>
-
+    <p>Notification access and <code>READ_SMS</code> are optional and may be disabled at any time in Android settings. Without <code>READ_SMS</code>, notification import, shared text, and manual entry remain available. Without notification access, shared text and manual entry remain available, and SMS import can still operate after separate <code>READ_SMS</code> consent. Codes stored on the phone can be deleted individually in the App.</p>
+    <p>Android WorkManager contributes technical permissions to the merged manifest for scheduling/executing background work (<code>WAKE_LOCK</code>, <code>ACCESS_NETWORK_STATE</code>, <code>RECEIVE_BOOT_COMPLETED</code>, <code>FOREGROUND_SERVICE</code>). They do not grant access to message bodies, contacts, or location. CI audits the final APK permission set and requires explicit review for any change.</p>
+    <h2>Logging and diagnostics</h2>
+    <p>Production App code does not create its own logs containing parcel codes, message bodies, processed-message identifiers, or credentials. The repository has an automated guard that rejects explicit logging calls in production sources for active platforms. Operating-system, platform-library, and store-tool logs remain outside the App's direct control.</p>
     <h2>Security</h2>
-    <p>A pickup code may allow someone to collect a parcel. Users should protect their phone and watch with a screen lock and remove expired codes. No storage method can guarantee complete security, but the App minimizes retained data and creates no developer-operated cloud copy.</p>
-
+    <p>A pickup code may allow someone to collect a parcel. Users should protect their phone and watch with a screen lock and remove expired codes. No storage method can guarantee complete security, but the App minimizes retained data, creates no developer-operated cloud copy, and disables operating-system app-data backup for the Android phone app and Wear OS client.</p>
+    <p>Android and Wear OS use app-private storage, while Garmin keeps a minimized snapshot in <code>Application.Storage</code>. The project does not claim an extra encryption layer that protects an already unlocked, rooted/jailbroken or otherwise compromised device, or physical access that bypasses platform protections.</p>
+    <p>After reinstall or phone replacement, active codes are not restored from cloud app backup. A fresh installation creates a new <code>senderEpoch</code>; codes must be re-imported or manually added and watches synchronized again.</p>
+    <p>Deleting a code means removing it from active phone storage and propagating the updated list to reachable watches. A disconnected watch may keep the previous snapshot until a later successful synchronization or local data clearing. The App does not promise cryptographic erasure of flash memory.</p>
     <h2>Children</h2>
     <p>The App is not directed to children, and the developer does not knowingly collect children's data.</p>
-
     <h2>Changes</h2>
     <p>This policy may be updated if the App's behavior changes. An updated policy will include a revised effective date.</p>
-
     <h2>Contact</h2>
     <p>Privacy questions may be sent to: <strong><a href="mailto:erwin.slabuszewski@gmail.com">erwin.slabuszewski@gmail.com</a></strong>.</p>
-
     <h2>Trademarks</h2>
-    <p>Parcel Code / Kod Paczki is an independent project. It is not an official app or product of ORLEN S.A., Allegro sp. z o.o., or Garmin Ltd. Names and trademarks belong to their respective owners.</p>
+    <p>Parcel Code / Kod Paczki is an independent project. It is not an official app or product of ORLEN S.A., Allegro sp. z o.o., Garmin Ltd., or Google LLC. Names and trademarks belong to their respective owners.</p>
   </section>
 </article>
 </main>
